@@ -20,6 +20,8 @@ $titi=new Stagiaire("ee","sdf",23);
 $titi->travaille($boss);
 
 
+$grh1= new Grh();
+$grh1->setUnEmployee($titi);
 
 echo "<pre>";
 print_r($bob);
