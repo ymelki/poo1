@@ -7,7 +7,6 @@ abstract class Employee {
     private string $nom;
     private string $prenom;
     private int $age;
-    private int $salaire;
 
     public function __construct(string $nom,
                                 string  $prenom,
@@ -89,8 +88,8 @@ abstract class Employee {
     /**
      * Get the value of age
      */ 
-    public abstract function getAge();
-
-
-    
+    public function getAge()
+    {
+        return $this->age;
+    }
 }

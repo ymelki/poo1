@@ -1,14 +1,12 @@
 <?php
 
-class Ingenieur extends Employee implements InterfaceEmployee {
+class Ingenieur extends Employee implements  InterfacePrime {
 
     private int $salaire;
-    private int $competence;
-    // méthode
+    private int $competence=2;
+    private int $prime;
 
-
-
-    
+    // méthode 
 
     /**
      * Get the value of competence
@@ -46,6 +44,26 @@ class Ingenieur extends Employee implements InterfaceEmployee {
     public function setSalaire($salaire)
     {
         $this->salaire = $salaire;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of prime
+     */ 
+    public function getPrime()
+    {
+        return $this->prime;
+    }
+
+    /**
+     * Set the value of prime
+     *
+     * @return  self
+     */ 
+    public function setPrime($prime)
+    {
+        $this->prime = $prime;
 
         return $this;
     }

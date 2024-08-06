@@ -1,0 +1,22 @@
+Interface :
+Objectif : 
+On veut manipuler des objets comme un seul groupe (abstrait)
+ - ingénieurs
+ - commercials
+ - secretaire
+ - stagiaire 
+
+=> Je créé la définition Groupe :
+ Ex: Ils doivent avoir un salaire 
+
+ Techniqument : Il faudrait un systeme qui viendrait
+ imposer a chacune des classe correspondante d'implementer
+ la méthode getSalaire();
+ 
+ On créé un concept qui dit cette definition
+ On donne le nom du concept salariable => qui doivent avoir la
+ méthode getSalaire()
+ salariable => getSalaire() 
+
+ Je vais dire que l'ingénieur s'inscrit dans les groupe des salairies
+ en disant Ingenieur implement Salariable;

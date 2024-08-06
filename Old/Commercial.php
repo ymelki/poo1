@@ -1,6 +1,6 @@
 <?php
 
-class Commercial extends Employee implements  InterfacePrime  {
+class Commercial extends Employee implements InterfaceEmployee, InterfacePrime  {
     
     private int $salaire;
 

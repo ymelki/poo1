@@ -1,9 +1,8 @@
 <?php
 
-class Stagiaire extends Employee {
-
+class Secretaire extends Employee implements InterfaceEmployee{
     
-    private int $salaire=3 ;
+    private int $salaire;
 
     /**
      * Get the value of salaire
@@ -24,10 +23,4 @@ class Stagiaire extends Employee {
 
         return $this;
     }
-    public function travaille(Patron $patron){
-        echo "Le stagiaire travaille pour ".
-        $patron->getNom(); 
-
-    }
-    
 }

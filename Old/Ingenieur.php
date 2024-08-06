@@ -1,14 +1,32 @@
 <?php
 
-class Commercial extends Employee implements  InterfacePrime  {
-    
+class Ingenieur extends Employee implements InterfaceEmployee, InterfacePrime {
+
     private int $salaire;
+    private int $competence=2;
+    private int $prime;
 
+    // méthode 
 
-    
-    private int $bonus;
+    /**
+     * Get the value of competence
+     */ 
+    public function getCompetence()
+    {
+        return $this->competence;
+    }
 
-    private int $prime=3;
+    /**
+     * Set the value of competence
+     *
+     * @return  self
+     */ 
+    public function setCompetence($competence)
+    {
+        $this->competence = $competence;
+
+        return $this;
+    }
 
     /**
      * Get the value of salaire
@@ -29,13 +47,6 @@ class Commercial extends Employee implements  InterfacePrime  {
 
         return $this;
     }
-
-    public function trouveMission(
-        Ingenieur $ingenieur){
-        echo "moi je trouve une mission pour 
-        un ingénieur .". $ingenieur->getCompetence();
-    }
-
 
     /**
      * Get the value of prime

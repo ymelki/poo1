@@ -1,6 +1,6 @@
 <?php
 
-class Stagiaire extends Employee {
+class Stagiaire extends Employee implements InterfaceEmployee{
 
     
     private int $salaire=3 ;
