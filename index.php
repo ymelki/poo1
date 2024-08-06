@@ -2,26 +2,20 @@
 
 // instancier la classe ingénieur
 // réalité de la classe => objet de la classe
+require "Employee.php";
 require "Ingenieur.php";
 
 // on utilie le mot clé new pour instancier la classe
 
 
-$bob=new Ingenieur();
-$bob->id=1;
-$bob->nom="toto";
-$bob->prenom="tata";
-$bob->setAge(67);
+$bob=new Ingenieur("Yoel","Melki",37  ); // le constructeur est lancé
+$bob->setId(1);
 
-$tareq=new Ingenieur();
-$tareq->id=2;
-$tareq->nom="vgf";
-$tareq->prenom="teta";
+$toto=new Commercial("Commercial1","Melki",37);
+$toto->trouveMission( $bob  );
+
+
 
 echo "<pre>";
 print_r($bob);
-echo "</pre>";
-
-echo "<pre>";
-print_r($tareq);
 echo "</pre>";
