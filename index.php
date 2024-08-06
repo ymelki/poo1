@@ -14,6 +14,11 @@ $bob->setId(1);
 $toto=new Commercial("Commercial1","Melki",37);
 $toto->trouveMission( $bob  );
 
+$boss=new Patron("redsz","efds",24);
+
+$titi=new Stagiaire("ee","sdf",23);
+$titi->travaille($boss);
+
 
 
 echo "<pre>";

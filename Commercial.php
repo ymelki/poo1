@@ -9,7 +9,4 @@ class Commercial extends Employee  {
         un ingénieur .". $ingenieur->getCompetence();
     }
 
-
-
- 
 }
